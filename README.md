@@ -62,7 +62,7 @@ StudentRecap.com/
 1. **Clone repositori** ke folder web server (misalnya `www` pada laragon):
 
    ```bash
-   git clone https://github.com/notgoodindeveloping/StudentRecap.com.git
+   https://github.com/QueenOrca/ArtikaZahrotulMawadah_utsweb.git
    ```
 
 2. **Jalankan Apache dan MySQL** dari XAMPP atau Laragon.
@@ -70,15 +70,15 @@ StudentRecap.com/
 3. **Buat database dan tabel.** Buka phpMyAdmin atau klien MySQL, lalu jalankan:
 
    ```sql
-   CREATE DATABASE IF NOT EXISTS dbnilai;
-   USE dbnilai;
+   CREATE DATABASE IF NOT EXISTS db5e;
+   USE db5e;
 
    CREATE TABLE IF NOT EXISTS nilai (
        nim           CHAR(10)      NOT NULL PRIMARY KEY,
-       nm_lengkap    VARCHAR(100)  NOT NULL,
+       namalengkap    VARCHAR(100)  NOT NULL,
        foto          VARCHAR(255)  DEFAULT '',
-       nilai_akhir   DECIMAL(5,2)  NOT NULL,
-       nilai_huruf   VARCHAR(10)   NOT NULL,
+       nilaiakhir   DECIMAL(5,2)  NOT NULL,
+       nilaihuruf   VARCHAR(10)   NOT NULL,
        predikat      VARCHAR(50)   NOT NULL,
        created_date  DATETIME      DEFAULT CURRENT_TIMESTAMP,
        modified_date DATETIME      DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP

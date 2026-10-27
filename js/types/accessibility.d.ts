@@ -1,5 +1,5 @@
 /**
- * AdminLTE Accessibility Module
+ * AdminLTE --Accessibility Module
  * WCAG 2.1 AA Compliance Features
  */
 export interface AccessibilityConfig {
