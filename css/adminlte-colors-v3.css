@@ -6,7 +6,7 @@
  *   test, so lightblue, olive and teal take white text as they did) — with
  *   the AdminLTE 4 class families: `.bg-*`, `.text-bg-*`, `.text-*`,
  *   `.border-*`, `.link-*`, `.bg-gradient-*`, `.card-*`, `.callout-*`,
- *   `.direct-chat-*`, plus dark-mode tokens — and `data-lte-primary="lightblue"`
+ *   `.direct-chat-*`, plus dark-mode tokens — and `data--lte-primary="lightblue"`
  *   on <html> to make any of them Bootstrap's `primary`, buttons and all.
  *
  *   Load EITHER this file OR adminlte-colors.css (the palette designed for
