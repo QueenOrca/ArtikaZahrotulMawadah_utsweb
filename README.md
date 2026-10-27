@@ -59,7 +59,7 @@ StudentRecap.com/
 
 ## Cara Menjalankan
 
-1. **Clone repositori** ke folder web server (misalnya `htdocs` pada XAMPP):
+1. **Clone repositori** ke folder web server (misalnya `www` pada laragon):
 
    ```bash
    git clone https://github.com/notgoodindeveloping/StudentRecap.com.git
@@ -96,7 +96,7 @@ StudentRecap.com/
 5. **Buka aplikasi** di browser:
 
    ```
-   http://localhost/StudentRecap.com/viewdata.php
+   http://localhost/MidExam/viewdata.php
    ```
 
    Pastikan folder `uploads/` dapat ditulis oleh web server agar fitur upload foto berjalan.
@@ -116,9 +116,9 @@ StudentRecap.com/
 
 ## Pembuat
 
-| Keterangan   | Detail                |
-|--------------|-----------------------|
-| Nama         | Hayato Herwibowo      |
-| Kelas        | 5E-TIF                |
-| NIM          | 3202416043            |
-| Mata Kuliah  | Pemrograman Web       |
+| Keterangan   | Detail                       |
+|--------------|------------------------------|
+| Nama         | Artika Zahrotul MAwadah      |
+| Kelas        | 5E-TIF                       |
+| NIM          | 3202416128                   |
+| Mata Kuliah  | Pemrograman Web              |
