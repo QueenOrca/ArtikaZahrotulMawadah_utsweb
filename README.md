@@ -1,4 +1,4 @@
-# StudentRecap.com
+# MidExam
 
 Aplikasi web berbasis **PHP** untuk merekap nilai mahasiswa. Data nilai disimpan di database MySQL, lengkap dengan foto mahasiswa, konversi otomatis ke nilai huruf dan predikat, serta fitur pencarian, filter, pengurutan, dan paginasi.
 
