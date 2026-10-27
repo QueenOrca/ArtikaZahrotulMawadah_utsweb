@@ -116,8 +116,8 @@
             </div>
 
             <div class="form-group">
-                <label for="nm_lengkap">Nama Lengkap</label>
-                <input type="text" id="nm_lengkap" name="nm_lengkap" placeholder="Masukkan nama lengkap" required>
+                <label for="namalengkap">Nama Lengkap</label>
+                <input type="text" id="namalengkap" name="namalengkap" placeholder="Masukkan nama lengkap" required>
             </div>
 
             <!-- Field Upload Foto -->
@@ -127,14 +127,14 @@
             </div>
 
             <div class="form-group">
-                <label for="nilai_akhir">Nilai Akhir (0 - 100)</label>
-                <input type="number" id="nilai_akhir" name="nilai_akhir" step="0.01" min="0" max="100" placeholder="Contoh: 85.50" required>
+                <label for="nilaiakhir">Nilai Akhir (0 - 100)</label>
+                <input type="number" id="nilaiakhir" name="nilaiakhir" step="0.01" min="0" max="100" placeholder="Contoh: 85.50" required>
             </div>
 
             <div class="row-group">
                 <div class="form-group">
-                    <label for="nilai_huruf">Nilai Huruf (Otomatis)</label>
-                    <input type="text" id="nilai_huruf" name="nilai_huruf" placeholder="Huruf" readonly>
+                    <label for="nilaihuruf">Nilai Huruf (Otomatis)</label>
+                    <input type="text" id="nilaihuruf" name="nilaihuruf" placeholder="Huruf" readonly>
                 </div>
 
                 <div class="form-group">

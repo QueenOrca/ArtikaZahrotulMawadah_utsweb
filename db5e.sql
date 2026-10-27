@@ -18,31 +18,30 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dbnilai`
+-- Database: `db5e`
 --
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `nilai`
+-- Table structure for table `nilaimhsw`
 --
 
-CREATE TABLE `nilai` (
+CREATE TABLE `nilaimhsw` (
   `nim` char(10) NOT NULL,
-  `nm_lengkap` varchar(100) NOT NULL,
+  `namalengkap` varchar(100) NOT NULL,
   `foto` varchar(255) DEFAULT NULL,
-  `nilai_akhir` decimal(5,2) NOT NULL,
-  `nilai_huruf` char(1) NOT NULL,
+  `nilaiakhir` decimal(5,2) NOT NULL,
+  `nilaihuruf` char(1) NOT NULL,
   `predikat` varchar(100) NOT NULL,
   `created_date` timestamp NOT NULL DEFAULT current_timestamp(),
   `modified_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `nilai`
+-- Dumping data for table `nilaimhsw`
 --
 
-INSERT INTO `nilai` (`nim`, `nm_lengkap`, `foto`, `nilai_akhir`, `nilai_huruf`, `predikat`, `created_date`, `modified_date`) VALUES
+INSERT INTO `nilaimhsw` (`nim`, `namalengkap`, `foto`, `nilaiakhir`, `nilaihuruf`, `predikat`, `created_date`, `modified_date`) VALUES
 ('3202516001', 'Abyan', '1793028189_3202516001.jpeg', 95.00, 'A', 'Sangat Memuaskan', '2026-10-26 15:23:09', '2026-10-26 15:23:09'),
 ('3202516002', 'Rifdah', '1793028237_3202516002.jpeg', 85.00, 'A', 'Sangat Memuaskan', '2026-10-26 15:23:57', '2026-10-26 15:23:57'),
 ('3202516003', 'Caesha', '1793028263_3202516003.jpeg', 100.00, 'A', 'Sangat Memuaskan', '2026-10-26 15:24:23', '2026-10-26 15:24:23');
@@ -52,9 +51,9 @@ INSERT INTO `nilai` (`nim`, `nm_lengkap`, `foto`, `nilai_akhir`, `nilai_huruf`, 
 --
 
 --
--- Indexes for table `nilai`
+-- Indexes for table `nilaimhsw`
 --
-ALTER TABLE `nilai`
+ALTER TABLE `nilaimhsw`
   ADD PRIMARY KEY (`nim`);
 COMMIT;
 

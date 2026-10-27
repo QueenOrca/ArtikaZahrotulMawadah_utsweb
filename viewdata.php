@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . "/connection.php";
-mysqli_select_db($conn, "dbnilai");
+mysqli_select_db($conn, "db5e");
 
 // Filter & Parameter
 $search = isset($_GET['search']) ? trim($_GET['search']) : '';
@@ -13,7 +13,7 @@ $whereClauses = [];
 
 if (!empty($search)) {
     $search_escaped = mysqli_real_escape_string($conn, $search);
-    $whereClauses[] = "nm_lengkap LIKE '%$search_escaped%'";
+    $whereClauses[] = "namalengkap LIKE '%$search_escaped%'";
 }
 
 if ($predikat_filter !== 'all' && !empty($predikat_filter)) {
@@ -27,7 +27,7 @@ if (count($whereClauses) > 0) {
 }
 
 // Hitung Total Data
-$sql_count = "SELECT COUNT(*) as total FROM nilai $whereSql";
+$sql_count = "SELECT COUNT(*) as total FROM nilaimhsw $whereSql";
 $res_count = mysqli_query($conn, $sql_count);
 $row_count = mysqli_fetch_assoc($res_count);
 $total_data = $row_count['total'];
@@ -39,7 +39,7 @@ $offset = ($page - 1) * $limit;
 if ($offset < 0) $offset = 0;
 
 // Query Data utama
-$sql = "SELECT * FROM nilai $whereSql ORDER BY nilai_akhir $sort_order LIMIT $limit OFFSET $offset";
+$sql = "SELECT * FROM nilaimhsw $whereSql ORDER BY nilaiakhir $sort_order LIMIT $limit OFFSET $offset";
 $result = mysqli_query($conn, $sql);
 ?>
 <!doctype html>

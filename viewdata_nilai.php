@@ -1,10 +1,10 @@
 <?php
 require_once __DIR__ . '/connection.php';
-mysqli_select_db($conn, "dbnilai");
+mysqli_select_db($conn, "db5e");
 
 $nim = mysqli_real_escape_string($conn, $_POST['nim']);
-$nm_lengkap = mysqli_real_escape_string($conn, $_POST['nm_lengkap']);
-$nilai_akhir = floatval($_POST['nilai_akhir']);
+$namalengkap = mysqli_real_escape_string($conn, $_POST['namalengkap']);
+$nilai_akhir = floatval($_POST['nilaiakhir']);
 
 function getNilaiHuruf($nilai) {
     if ($nilai >= 0 && $nilai <= 34.50) {
@@ -22,7 +22,7 @@ function getNilaiHuruf($nilai) {
     }
 }
 
-$hasil = getNilaiHuruf($nilai_akhir);
+$hasil = getNilaiHuruf($nilaiakhir);
 $nilai_huruf = $hasil[0];
 $predikat = $hasil[1];
 
@@ -49,8 +49,8 @@ if (isset($_FILES['foto']) && $_FILES['foto']['error'] === UPLOAD_ERR_OK) {
     }
 }
 
-$sql = "INSERT INTO nilai (nim, nm_lengkap, foto, nilai_akhir, nilai_huruf, predikat, created_date, modified_date)
-        VALUES ('$nim', '$nm_lengkap', '$foto_nama', '$nilai_akhir', '$nilai_huruf', '$predikat', NOW(), NOW())";
+$sql = "INSERT INTO nilaimhsw (nim, namalengkap, foto, nilaiakhir, nilaihuruf, predikat, created_date, modified_date)
+        VALUES ('$nim', '$namalengkap', '$foto_nama', '$nilaiakhir', '$nilaihuruf', '$predikat', NOW(), NOW())";
 
 if (mysqli_query($conn, $sql)) {
     header('Location: viewdata.php');

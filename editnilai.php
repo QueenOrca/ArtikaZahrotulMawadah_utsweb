@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . "/connection.php";
-mysqli_select_db($conn, "dbnilai");
+mysqli_select_db($conn, "db5e");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nim = mysqli_real_escape_string($conn, $_POST['nim']);
@@ -40,10 +40,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    $sql = "UPDATE nilai SET 
-            nm_lengkap = '$nama_lengkap', 
-            nilai_akhir = '$nilai_akhir', 
-            nilai_huruf = '$nilai_huruf', 
+    $sql = "UPDATE nilaimhsw SET 
+            namalengkap = '$nama_lengkap', 
+            nilaiakhir = '$nilai_akhir', 
+            nilaihuruf = '$nilai_huruf', 
             predikat = '$predikat', 
             modified_date = '$modified_date'
             $foto_update 
